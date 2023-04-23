@@ -4,7 +4,7 @@ import classes from "./MealItem.module.css";
 import MealItemForm from "../MealItem/MealItemForm";
 
 const MealItem = (props) => {
-  const mealPrice = `$${props.mealPrice.toFixed(2)}`;  
+  const mealPrice = `£${props.mealPrice.toFixed(2)}`;
 
   return (
     <>
