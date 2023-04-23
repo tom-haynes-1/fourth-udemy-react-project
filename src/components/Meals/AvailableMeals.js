@@ -8,6 +8,7 @@ import Card from "../UI/Card";
 const AvailableMeals = (props) => {
     const mealsListArray = mockedMealsData.map((mealItem) => 
       <MealItem 
+        id={ mealItem.id }
         key={ mealItem.id } 
         mealName={ mealItem.name }
         mealDescription={ mealItem.description }
