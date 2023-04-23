@@ -1,7 +1,9 @@
-function App() {
+import React from "react";
+
+const App = () => {
   return (
     <div>
-      <h2>Let's get started! Hello</h2>
+      <h2>Let's get started!</h2>
     </div>
   );
 }
