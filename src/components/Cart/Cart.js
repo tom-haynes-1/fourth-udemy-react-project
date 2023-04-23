@@ -14,7 +14,7 @@ const Cart = (props) => {
   ].map((item) => <li>{ item.name }</li>);
 
   return (
-    <Modal>
+    <Modal onCloseCart={ props.onCloseCart }>
       <ul className={ classes["cart-items"] }>
         { cartItems }
       </ul>
@@ -23,7 +23,7 @@ const Cart = (props) => {
         <span>35.62</span>
       </div>
       <div className={ classes.actions }>
-        <button className={ classes["button--alt"] }>
+        <button className={ classes["button--alt"] } onClick={ props.onCloseCart }>
             Close
         </button>
         <button className={ classes.button }>
