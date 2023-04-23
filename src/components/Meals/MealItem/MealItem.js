@@ -8,8 +8,8 @@ const MealItem = (props) => {
 
   return (
     <>
-      <li>
-        <div className={ classes.meal }>
+      <li className={ classes.meal }>
+        <div>
           <h3>
             { props.mealName }
           </h3>
@@ -21,7 +21,7 @@ const MealItem = (props) => {
           </div>
         </div>
         <div>
-          <MealItemForm />
+          <MealItemForm id={ props.id } />
         </div>
       </li>
     </>
